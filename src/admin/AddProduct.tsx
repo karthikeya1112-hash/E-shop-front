@@ -126,7 +126,7 @@ export default function AddProduct({ route, category }: any) {
   const sendData = async () => {
     try {
       const res = await fetch(
-        `https://e-shop-215k.onrender.com/${route}/post`,
+        `https://e-shop-wepb.onrender.com/${route}/post`,
         {
           method: "POST",
           headers: {

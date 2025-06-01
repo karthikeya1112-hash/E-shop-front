@@ -47,7 +47,7 @@ export default function Signup() {
       if (email.includes("@gmail.com")) {
         setLoading(true);
         const res = await fetch(
-          "https://e-shop-215k.onrender.com/users/register",
+          "https://e-shop-wepb.onrender.com/users/register",
           {
             method: "POST",
             headers: {

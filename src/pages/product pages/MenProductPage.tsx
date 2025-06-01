@@ -101,7 +101,7 @@ const MenProductPage = () => {
       setLoading(true);
       try {
         const res = await axios.get(
-          `https://e-shop-215k.onrender.com/mens?page=${page}&limit=${limit}&category=${category}&brand=${sortByBrand}&sort=${sortBy},${order}&search=${search}`
+          `https://e-shop-wepb.onrender.com/mens?page=${page}&limit=${limit}&category=${category}&brand=${sortByBrand}&sort=${sortBy},${order}&search=${search}`
         );
         setData(res.data.men);
         setLoading(false);

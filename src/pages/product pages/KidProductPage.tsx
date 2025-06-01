@@ -30,7 +30,7 @@ const KidProductPage = () => {
     setLoading(true);
     await axios
       .get(
-        `https://e-shop-215k.onrender.com/kids?page=${page}&limit=${limit}&category=${category}&gender=${gender}&sort=${order},${sortPrice}&search=${search}`
+        `https://e-shop-wepb.onrender.com/kids?page=${page}&limit=${limit}&category=${category}&gender=${gender}&sort=${order},${sortPrice}&search=${search}`
       )
       .then((res: AxiosResponse) => {
         setData(res.data.kid);

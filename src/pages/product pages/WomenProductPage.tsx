@@ -29,7 +29,7 @@ const WomenProductPage = () => {
     setLoading(true);
     await axios
       .get(
-        `https://e-shop-215k.onrender.com/womens?page=${page}&limit=${limit}&category=${category}&sort=${order},${sortPrice}&search=${search}`
+        `https://e-shop-wepb.onrender.com/womens?page=${page}&limit=${limit}&category=${category}&sort=${order},${sortPrice}&search=${search}`
       )
       .then((res: AxiosResponse) => {
         console.log(res.data);

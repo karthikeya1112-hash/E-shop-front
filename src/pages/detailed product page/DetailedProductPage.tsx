@@ -37,7 +37,7 @@ export default function DetailedProductPage() {
     setLoading(true);
     try {
       const res = await fetch(
-        `https://e-shop-215k.onrender.com/${category}/${id}`
+        `https://e-shop-wepb.onrender.com/${category}/${id}`
       );
       const data = await res.json();
       setData(data);
@@ -50,7 +50,7 @@ export default function DetailedProductPage() {
     const payload = data;
     if (isAuthenticated) {
       if (data?.availability !== "Currently unavailable") {
-        fetch("https://e-shop-215k.onrender.com/carts/post", {
+        fetch("https://e-shop-wepb.onrender.com/carts/post", {
           method: "POST",
           headers: {
             Authorization: `${localStorage.getItem("e-book token")}`,

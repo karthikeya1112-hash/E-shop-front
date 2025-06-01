@@ -76,7 +76,7 @@ const Homepage = () => {
   const getData = async () => {
     setLoad(true);
     try {
-      const response = await fetch("https://e-shop-215k.onrender.com/homes");
+      const response = await fetch("https://e-shop-wepb.onrender.com/homes");
       const data = await response.json();
 
       const {

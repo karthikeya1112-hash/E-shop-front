@@ -15,7 +15,7 @@ const Users = () => {
   const getUser = async () => {
     try {
       setLoading(true);
-      const res = await fetch("https://e-shop-215k.onrender.com/users/customers");
+      const res = await fetch("https://e-shop-wepb.onrender.com/users/customers");
       const data = await res.json();
       setUsers(data);
       setLoading(false);
@@ -27,7 +27,7 @@ const Users = () => {
     const updatedCartItems = users.filter((item: any) => item._id !== id);
     setUsers(updatedCartItems);
     try {
-      const res = await fetch(`https://e-shop-215k.onrender.com/users/delete/${id}`, {
+      const res = await fetch(`https://e-shop-wepb.onrender.com/users/delete/${id}`, {
         method: "DELETE",
       });
       const data = await res.json();
